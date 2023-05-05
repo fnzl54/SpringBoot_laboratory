@@ -1,0 +1,12 @@
+spring:
+  # redis host, post 설정
+  redis:
+    host: localhost
+    port: 6379
+  main:
+    allow-bean-definition-overriding: true
+  # RDB 없이 Redis만 사용 할 때
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+      - org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration
