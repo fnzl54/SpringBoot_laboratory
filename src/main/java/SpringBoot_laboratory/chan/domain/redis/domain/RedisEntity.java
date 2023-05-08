@@ -8,7 +8,7 @@ import java.time.LocalDateTime;
 
 @Getter
 @RedisHash(value = "people", timeToLive = 120)
-public class Entity {
+public class RedisEntity {
 
     @Id
     private String id;
@@ -16,7 +16,7 @@ public class Entity {
     private Integer age;
     private LocalDateTime createdAt;
 
-    public Entity(String name, Integer age) {
+    public RedisEntity(String name, Integer age) {
         this.name = name;
         this.age = age;
         this.createdAt = LocalDateTime.now();
