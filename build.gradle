@@ -30,6 +30,8 @@ dependencies {
 	implementation 'org.springdoc:springdoc-openapi-ui:1.6.6'
 	// redis 설정
 	implementation 'org.springframework.boot:spring-boot-starter-data-redis'
+	// mysql 설정
+	runtimeOnly 'com.mysql:mysql-connector-j'
 }
 
 tasks.named('test') {
